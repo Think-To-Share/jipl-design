@@ -84,6 +84,7 @@
     }
 
     .items{
+        background-color: transparent;
         border: 1.5px solid #d9d9d9;
         margin-top: 15px;
         padding: 1.25rem;
@@ -172,98 +173,124 @@
 .about-section img{
     padding-top:20px ;
 }
-.company-section {
-    background-color: #ffd700;
-    width: 100%;
-    height: 55px;
-    @media (min-width:768px) {
-        height:95px;
-    }
-}
+
 .our-brand-section {
     padding-top: 0px;
+    background-image: url('../images/brand-section-image.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 50%;
 
     @media (min-width: 768px) {
         padding-top: 40px;
     }
-}
-.our-brand-section h2 {
-    font-family: 'jost';
-    font-weight: bold;
-    padding-top: 25px;
-    padding-left: 10px;
 
-    @media (min-width: 768px) {
-        padding-top: 80px;
+    h2 {
+        font-family: 'jost';
+        font-weight: bold;
+        padding-top: 25px;
+        padding-left: 10px;
+    
+        @media (min-width: 768px) {
+            padding-top: 80px;
+        }
     }
-}
-.our-brand-section p {
-    font-family: 'poppins';
-    font-weight: 400;
-    color: #949494;
-    font-size: 0.9em;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-left: 1px;
-    @media (min-width:768px) {
-        font-size: 1rem;
-    }
-}
-.company-section img {
-    padding-top: 25px;
-}
-.news-section h2 {
-    text-align: center;
-    font-family: 'jost';
-    font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
 
-    @media (min-width: 768px) {
-        padding-top: 70px;
-        padding-bottom: 15px;
-    }
-}
-.news-section h4 {
-    font-family: 'jost';
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #181818;
-
-    @media (min-width: 768px) {
-        font-size: 1.5rem;
-    }
-}
-.news-section .p4 {
-    font-family: 'poppins';
-    font-weight: 300;
-    font-size: 0.7rem;
-    color: black;
-    border-bottom: 1px solid #dbdbdb;
-    padding-bottom: 5px;
-    margin-bottom: 4px;
-
-    @media (min-width: 768px) {
-        font-size: 0.7em;
-        padding-bottom: 20px;
-        margin-bottom: 6px;
+    p {
+        font-family: 'poppins';
+        font-weight: 400;
+        color: #949494;
+        font-size: 0.9em;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: 1px;
+        margin-bottom: 50px;
+    
+        @media (min-width:768px) {
+            font-size: 1rem;
+        }
     }
 }
 
-.news-section .p6 {
-    font-family: 'poppins';
-    font-weight: 300;
-    font-size: 0.6em;
-    margin: 0rem;
-    @media (min-width: 768px) {
-        font-size: 0.7rem;
-        margin: 1.25rem;
+.company-section {
+    background-color: #ffd700;
+    width: 100%;
+
+    img {
+        padding: 40px 10px;
     }
 }
-.news-section img {
-    padding-left: 20px;
-    width: auto;
-    height: 100%;
+
+.news-section {
+    h2 {
+        text-align: center;
+        font-family: 'jost';
+        font-weight: bold;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    
+        @media (min-width: 768px) {
+            padding-top: 70px;
+            padding-bottom: 15px;
+        }
+    }
+
+    .thumbnail-container {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        border-top-left-radius: 5em;
+        border-bottom-right-radius: 5em;
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    .card-body {
+        padding: 0;
+        padding-top: 18px;
+
+        h4 {
+            font-family: 'jost';
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #181818;
+        
+            @media (min-width: 768px) {
+                font-size: 1.5rem;
+            }
+        }
+    
+        .p4 {
+            font-family: 'poppins';
+            font-weight: 300;
+            font-size: 0.7rem;
+            color: black;
+            border-bottom: 1px solid #dbdbdb;
+            padding-bottom: 5px;
+            margin-bottom: 4px;
+        
+            @media (min-width: 768px) {
+                font-size: 0.7em;
+                padding-bottom: 20px;
+                margin-bottom: 6px;
+            }
+        }
+    
+        .p6 {
+            font-family: 'poppins';
+            font-weight: 300;
+            font-size: 0.6em;
+            margin: 0rem;
+            @media (min-width: 768px) {
+                font-size: 0.7rem;
+                margin: 1.25rem;
+            }
+        }
+    }
 }
 
 .client-section h2 {
