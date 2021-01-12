@@ -11625,7 +11625,6 @@ h3 {
     padding: 27px 0px;
   }
 }
-
 .business-vertical-section h2 {
   text-align: center;
   font-family: "Jost";
@@ -11640,43 +11639,51 @@ h3 {
     padding: 0px;
   }
 }
-
 .business-vertical-section .items {
-  padding: 4px 4px;
-  margin-top: 3px;
+  border: 1.5px solid #d9d9d9;
+  margin-top: 15px;
+  padding: 1.25rem;
+  border-radius: 15px;
+  -webkit-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .business-vertical-section .items {
-    padding: 10px 10x;
+    padding: 30px;
     margin-top: 15px;
   }
 }
-
-.business-vertical-section .card-body {
+.business-vertical-section .items .card-body {
   padding: 0px;
 }
-
-.business-vertical-section .icon {
+.business-vertical-section .items .card-body .icon {
   width: 50px;
   padding-right: 10px;
 }
-
-.business-vertical-section .items .para1 {
+.business-vertical-section .items .card-body .para1 {
+  font-family: "jost";
+  font-weight: 600;
   margin-bottom: 0;
 }
-
-.business-vertical-section .items .para2 {
+.business-vertical-section .items .card-body .para2 {
+  font-family: "poppins";
+  font-weight: 300;
+  font-size: 0.9em;
+  color: #6e666c;
   margin-bottom: 0.1rem;
 }
 @media (min-width: 768px) {
-  .business-vertical-section .items .para2 {
+  .business-vertical-section .items .card-body .para2 {
     margin-bottom: 1rem;
   }
 }
-
-.business-vertical-section p {
-  font-family: "jost";
-  font-weight: 600;
+.business-vertical-section .items:hover {
+  background-color: #ffd500;
+  border-color: #ffd500;
+}
+.business-vertical-section .items:hover .card-body .para2 {
+  color: #000;
 }
 
 .about-section p {
@@ -11939,29 +11946,6 @@ h3 {
     font-size: 0.8rem;
     margin-bottom: 1rem;
   }
-}
-
-.business-vertical-section .items .para2 {
-  font-family: "poppins";
-  font-weight: 300;
-  font-size: 0.7em;
-}
-
-.business-vertical-section .items {
-  border: 1px solid #d9d9d9;
-  margin-top: 15px;
-  border-radius: 15px;
-  -webkit-box-shadow: 0.5px 0.5px #d9d9d9;
-          box-shadow: 0.5px 0.5px #d9d9d9;
-  padding: 10px 10px;
-  -webkit-transition: background-color 0.5s ease-in;
-  transition: background-color 0.5s ease-in;
-  cursor: pointer;
-}
-
-.business-vertical-section .items:hover {
-  background-color: #ffd500;
-  border-color: #ffd500;
 }
 
 .nav-section-bottom {

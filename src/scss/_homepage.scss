@@ -59,57 +59,84 @@
 .btn.yellow-btn:hover {
     box-shadow: 0px 2px 10px 0px #ffd50069;
 }
+
+// Business Vertical
 .business-vertical-section {
     padding: 0px 0px;
     background: linear-gradient(to bottom, #f2f5f8 0%, #ffffff 100%);
+
     @media (min-width: 768px) {
         padding: 27px 0px;
     }
-}
-.business-vertical-section h2 {
-    text-align: center;
-    font-family: 'Jost';
-    font-weight: 700;
-    font-size: 1.2rem;
-    margin-bottom: 0rem;
-    padding-top: 14px;
 
-    @media (min-width: 768px) {
-        font-size: 2rem;
-        padding: 0px;
+    h2 {
+        text-align: center;
+        font-family: 'Jost';
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-bottom: 0rem;
+        padding-top: 14px;
+    
+        @media (min-width: 768px) {
+            font-size: 2rem;
+            padding: 0px;
+        }
+    }
+
+    .items{
+        border: 1.5px solid #d9d9d9;
+        margin-top: 15px;
+        padding: 1.25rem;
+        border-radius: 15px;
+        transition: background-color 0.5s ease-in;
+        cursor: pointer;
+
+        @media (min-width:768px){
+            padding: 30px;
+            margin-top: 15px;
+        }
+
+        .card-body{
+            padding:0px;
+
+            .icon {
+                width: 50px;
+                padding-right: 10px;
+            }
+        
+            .para1 {
+                font-family: 'jost';
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+    
+            .para2 {
+                font-family: 'poppins';
+                font-weight: 300;
+                font-size: 0.9em;
+                color: #6e666c;
+                margin-bottom: 0.1rem;
+
+                @media (min-width: 768px) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        &:hover {
+            background-color: #ffd500;
+            border-color: #ffd500;
+
+            .card-body {
+                .para2 {
+                    color: #000;
+                }
+            }
+        }
     }
 }
-.business-vertical-section .items{
-    padding:4px 4px; 
-    margin-top:3px;
-    @media (min-width:768px){
-        padding:10px 10x;
-        margin-top:15px;
-    }
-}
-.business-vertical-section .card-body{
-    padding:0px;
 
-}
-.business-vertical-section .icon {
-    width: 50px;
-    padding-right: 10px;
-}
 
-.business-vertical-section .items .para1 {
-    margin-bottom: 0;
-}
-.business-vertical-section .items .para2 {
-    margin-bottom: 0.1rem;
-
-    @media (min-width: 768px) {
-        margin-bottom: 1rem;
-    }
-}
-.business-vertical-section p {
-    font-family: 'jost';
-    font-weight: 600;
-}
 .about-section p {
     font-family: 'poppins';
     font-weight: 400;
@@ -328,26 +355,7 @@
         margin-bottom: 1rem;
     }
 }
-.business-vertical-section .items .para2 {
-    font-family: 'poppins';
-    font-weight: 300;
-    font-size: 0.7em;
-}
-.business-vertical-section .items {
-    border: 1px solid #d9d9d9;
-    margin-top: 15px;
 
-    border-radius: 15px;
-    box-shadow: 0.5px 0.5px #d9d9d9;
-    padding: 10px 10px;
-    transition: background-color 0.5s ease-in;
-    cursor: pointer;
-}
-
-.business-vertical-section .items:hover {
-    background-color: #ffd500;
-    border-color: #ffd500;
-}
 .nav-section-bottom {
     background-color: #070707;
 }
