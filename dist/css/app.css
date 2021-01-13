@@ -11733,14 +11733,18 @@ h3 {
 
 .our-brand-section {
   padding-top: 0px;
-  background-image: url(../public/images/brand-section-image-e977d6bcff430793ebc14e7880de7e13.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 50%;
 }
 @media (min-width: 768px) {
   .our-brand-section {
     padding-top: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .our-brand-section {
+    background-image: url(../public/images/brand-section-image-e977d6bcff430793ebc14e7880de7e13.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 50%;
   }
 }
 .our-brand-section h2 {
@@ -11775,7 +11779,12 @@ h3 {
   width: 100%;
 }
 .company-section img {
-  padding: 40px 10px;
+  padding: 15px 5px;
+}
+@media (min-width: 768px) {
+  .company-section img {
+    padding: 40px 10px;
+  }
 }
 
 .news-section h2 {
@@ -11849,7 +11858,7 @@ h3 {
 @media (min-width: 768px) {
   .news-section .card-body .p6 {
     font-size: 0.7rem;
-    margin: 1.25rem;
+    margin: 0.2rem;
   }
 }
 
@@ -11857,105 +11866,61 @@ h3 {
   font-family: "jost", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
+  margin-bottom: 23px;
 }
 @media (min-width: 768px) {
   .client-section h2 {
     font-size: 2rem;
   }
 }
-
-.client-section .p1 {
-  font-family: "poppins";
-  font-weight: 600;
-  color: #4b464a;
+.client-section .quote {
+  margin-left: 15px;
   border-left: 1px solid #ffd700;
-  margin-left: 9px;
-  font-size: 0.7rem;
-  padding-left: 6px;
+  padding-left: 10px;
+  margin-bottom: 20px;
 }
-@media (min-width: 768px) {
-  .client-section .p1 {
-    margin-left: 0px;
-    font-size: 0.5rem;
-    padding-left: 2px;
-  }
+.client-section .quote p {
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
 }
-
-.client-section .p2 {
-  font-family: "poppins";
-  font-weight: 300;
-  color: #a4a0a4;
-  padding-right: 0px;
-  margin-right: 0px;
-  font-size: 0.7rem;
-  margin-bottom: 0.5rem;
-}
-@media (min-width: 768px) {
-  .client-section .p2 {
-    padding-right: 85px;
-    margin-right: 85px;
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
-  }
+.client-section .testimonials {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding-right: 70px;
+  font-size: 0.8rem;
+  color: #7f7f7f;
 }
 
-.client-section .para3 {
+.right-section {
+  margin-top: 50px;
+}
+.right-section .client-box {
+  width: 70%;
+  -webkit-box-shadow: 2px 1px 5px 5px #f9f9f9;
+          box-shadow: 2px 1px 5px 5px #f9f9f9;
+}
+.right-section .client-box .text {
   font-family: "poppins";
-  font-weight: "italic";
+  font-style: italic;
   color: #c4c4c4;
   font-size: 0.7rem;
+  padding: 20px 10px;
+  margin-bottom: 0px;
+  font-size: 0.9rem;
 }
-@media (min-width: 768px) {
-  .client-section .para3 {
-    font-size: 0.8rem;
-  }
-}
-
-.client-section .para4 {
+.right-section .client-box .name {
   font-family: "jost";
   font-weight: bold;
-  color: #313131;
-  font-size: 0.6rem;
-  margin-bottom: 0.2rem;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
-@media (min-width: 768px) {
-  .client-section .para4 {
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-}
-
-.client-section p {
-  padding-bottom: 0.2rem;
-  margin-bottom: 0.2rem;
-}
-@media (min-width: 768px) {
-  .client-section p {
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-  }
-}
-
-.client-section .span {
-  font-family: "Times New Roman";
+.right-section .client-box .name span {
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
-  color: #2f2f2f;
-  font-size: 0.6rem;
-  padding-left: 7px;
-}
-
-.client-section .para7 {
-  font-family: "Times New Roman";
-  font-weight: 600;
-  color: #808080;
-  font-size: 0.7rem;
-  margin-bottom: 0.2rem;
-}
-@media (min-width: 768px) {
-  .client-section .para7 {
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
-  }
+  font-size: 0.7em;
 }
 
 .nav-section-bottom {
