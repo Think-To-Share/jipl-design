@@ -11690,12 +11690,17 @@ h3 {
 .about-section p {
   font-family: "poppins";
   font-weight: 400;
-  font: size 0.7rem;
+  font: size 0.6rem;
   color: #555c6a;
 }
 @media (min-width: 768px) {
   .about-section p {
     font-size: 0.8rem;
+  }
+}
+@media (min-width: 992px) {
+  .about-section p {
+    font-size: 0.7rem;
   }
 }
 
@@ -11705,16 +11710,18 @@ h3 {
   font-weight: bold;
   font-size: 1.3rem;
   padding-top: 20px;
+  margin-top: 1rem;
 }
 @media (min-width: 768px) {
   .about-section h2 {
     font-size: 1.5rem;
-    padding-top: 25px;
+    padding-top: 35px;
+    margin-top: 0.5rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .about-section h2 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -11724,6 +11731,11 @@ h3 {
 @media (min-width: 768px) {
   .about-section .container {
     padding: 110px 15px;
+  }
+}
+@media (min-width: 992px) {
+  .about-section .container {
+    padding-top: 110px 100px;
   }
 }
 

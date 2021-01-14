@@ -140,11 +140,14 @@
 .about-section p {
     font-family: 'poppins';
     font-weight: 400;
-    font: size 0.7rem;
+    font: size 0.6rem;
     color: #555c6a;
 
     @media (min-width: 768px) {
         font-size: 0.8rem;
+    }
+    @media (min-width:992px) {
+        font-size:0.7rem
     }
 }
 .about-section h2 {
@@ -153,13 +156,15 @@
     font-weight: bold;
     font-size: 1.3rem;
     padding-top: 20px;
-    @media (min-width: 768px) {
-        font-size: 1.5rem;
-        padding-top: 25px;
-    }
+    margin-top: 1rem;
 
     @media (min-width: 768px) {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        padding-top: 35px;
+        margin-top: 0.5rem;
+    }
+    @media (min-width:992px) {
+        font-size:1.9rem;
     }
 }
 .about-section .container {
@@ -167,6 +172,9 @@
 
     @media (min-width: 768px) {
         padding: 110px 15px;
+    }
+    @media (min-width:992px) {
+        padding-top:110px 100px;
     }
 }
 .about-section img {
