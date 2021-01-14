@@ -11732,28 +11732,38 @@ h3 {
 }
 
 .our-brand-section {
-  padding-top: 0px;
+  margin-top: 0px;
 }
 @media (min-width: 768px) {
   .our-brand-section {
-    padding-top: 40px;
+    margin-top: 40px;
   }
 }
 @media (min-width: 992px) {
   .our-brand-section {
     background-image: url(../public/images/brand-section-image-e977d6bcff430793ebc14e7880de7e13.jpg);
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: top right;
     background-size: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .our-brand-section {
+    background-position: bottom right;
   }
 }
 .our-brand-section h2 {
   font-family: "jost";
   font-weight: bold;
-  padding-top: 25px;
+  padding-top: 60px;
   padding-left: 10px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+  .our-brand-section h2 {
+    padding-top: 0;
+  }
+}
+@media (min-width: 1200px) {
   .our-brand-section h2 {
     padding-top: 80px;
   }

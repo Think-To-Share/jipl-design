@@ -174,25 +174,34 @@
 }
 
 .our-brand-section {
-    padding-top: 0px;
+    margin-top: 0px;
 
     @media (min-width: 768px) {
-        padding-top: 40px;
+        margin-top: 40px;
     }
-    @media (min-width:992px) {
+
+    @media (min-width: 992px) {
         background-image: url('../images/brand-section-image.jpg');
         background-repeat: no-repeat;
-        background-position: bottom right;
+        background-position: top right;
         background-size: 50%;
+    }
+
+    @media (min-width: 1200px) {
+        background-position: bottom right;
     }
 
     h2 {
         font-family: 'jost';
         font-weight: bold;
-        padding-top: 25px;
+        padding-top: 60px;
         padding-left: 10px;
 
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
+            padding-top: 0;
+        }
+
+        @media (min-width: 1200px) {
             padding-top: 80px;
         }
     }
