@@ -168,39 +168,41 @@
     }
 }
 .about-section .container {
-    padding: 5px 15px;
-
-    @media (min-width: 768px) {
-        padding: 110px 15px;
-    }
-    @media (min-width:992px) {
-        padding-top:110px 100px;
-    }
+    padding:5px 15px;
 }
 .about-section img {
     padding-top: 20px;
 }
 
 .our-brand-section {
-    padding-top: 0px;
+    margin-top: 0px;
 
     @media (min-width: 768px) {
-        padding-top: 40px;
+        margin-top: 40px;
     }
-    @media (min-width:992px) {
+
+    @media (min-width: 992px) {
         background-image: url('../images/brand-section-image.jpg');
         background-repeat: no-repeat;
-        background-position: bottom right;
+        background-position: top right;
         background-size: 50%;
+    }
+
+    @media (min-width: 1200px) {
+        background-position: bottom right;
     }
 
     h2 {
         font-family: 'jost';
         font-weight: bold;
-        padding-top: 25px;
+        padding-top: 60px;
         padding-left: 10px;
 
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
+            padding-top: 0;
+        }
+
+        @media (min-width: 1200px) {
             padding-top: 80px;
         }
     }
@@ -245,6 +247,9 @@
             padding-top: 70px;
             padding-bottom: 15px;
         }
+        @media (min-width:992px) {
+            margin-top:70px;
+        }
     }
 
     .thumbnail-container {
@@ -258,6 +263,9 @@
         img {
             width: auto;
             height: 100%;
+            @media (min-width:768px) {
+                
+            }
         }
     }
 
@@ -279,24 +287,27 @@
         .p4 {
             font-family: 'poppins';
             font-weight: 300;
-            font-size: 0.7rem;
+            font-size: 0.9rem;
             color: black;
             border-bottom: 1px solid #dbdbdb;
-            padding-bottom: 5px;
-            margin-bottom: 4px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
 
             @media (min-width: 768px) {
                 font-size: 0.7em;
                 padding-bottom: 20px;
                 margin-bottom: 6px;
             }
+            @media (min-width:992px) {
+                padding-bottom: 10px;
+            }
         }
 
         .p6 {
             font-family: 'poppins';
             font-weight: 300;
-            font-size: 0.6em;
-            margin: 0rem;
+            font-size: 0.8em;
+            margin: 1rem;
             @media (min-width: 768px) {
                 font-size: 0.7rem;
                 margin:0.2rem;
@@ -306,6 +317,7 @@
 }
 
 .client-section {
+    margin-top: 50px;
     h2 {
         font-family: 'jost', sans-serif;
         font-weight: 700;
@@ -314,6 +326,10 @@
 
         @media (min-width: 768px) {
             font-size: 2rem;
+            margin-bottom:50px
+        }
+        @media (min-width:992px) {
+            margin-bottom:15px;
         }
     }
 
