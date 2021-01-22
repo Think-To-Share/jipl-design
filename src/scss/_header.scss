@@ -1,0 +1,82 @@
+.page-header {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.288);
+    padding: 25px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+
+    .menu-side {
+        $menu-item-gap: 1.3rem;
+
+        ul {
+            display: flex;
+            margin-bottom: 0;
+            padding: 0;
+
+            li {
+                padding: 0 1.5em;
+                list-style-type: none;
+                position: relative;
+
+                a {
+                    color: #262525;
+                    font-family: $primary-font;
+                    font-weight: 500;
+                    transition: color ease-in-out 0.3s;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: $menu-item-gap;
+                        top: calc(100% + 5px);
+                        width: 0%;
+                        height: 5px;
+                        background-color: $primary-color;
+                        transition: width ease-in-out 0.3s;
+                    }
+                }
+
+                &:first-child {
+                    padding-left: 0;
+
+                    a {
+                        &::after {
+                            left: 0;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                }
+
+                &:hover {
+                    a {
+                        text-decoration: none;
+                        color: #000;
+
+                        &::after {
+                            width: calc(100% - #{($menu-item-gap * 2)});    
+                        }
+                    }
+
+                    &:first-child,
+                    &:last-child {
+                        a {
+                            &::after {
+                                width: calc(100% - #{$menu-item-gap});    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header-spacer {
+    height: 10px;
+}

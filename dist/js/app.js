@@ -1,6 +1,22 @@
 /******/ (function() { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/js/_header.js":
+/*!***************************!*\
+  !*** ./src/js/_header.js ***!
+  \***************************/
+/***/ (function() {
+
+window.addEventListener('load', adjustHeaderSpacing);
+window.addEventListener('resize', adjustHeaderSpacing);
+
+function adjustHeaderSpacing() {
+  var header = document.querySelector('.page-header');
+  var header_spacer = document.querySelector('.header-spacer');
+  header_spacer.style.height = "".concat(header.offsetHeight, "px");
+}
+
+/***/ }),
 
 /***/ "./src/js/app.js":
 /*!***********************!*\
@@ -8,9 +24,12 @@
   \***********************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/app.scss */ "./src/scss/app.scss");
 
+
+__webpack_require__(/*! ./_header */ "./src/js/_header.js");
 
 /***/ }),
 
@@ -20,6 +39,7 @@ __webpack_require__.r(__webpack_exports__);
   \***************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 

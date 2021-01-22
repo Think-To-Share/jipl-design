@@ -11537,19 +11537,23 @@ h3 {
     border-color: #dee2e6;
   }
 }
-.nav {
-  padding: 10px 170px;
-  padding-right: 20px;
+.btn.yellow-btn {
+  border-radius: 10em;
+  background-color: #ffd500;
+  font-weight: bold;
+  color: #000;
+  padding: 10px 20px;
+  -webkit-box-shadow: 0px 7px 20px 0px #ffd50069;
+          box-shadow: 0px 7px 20px 0px #ffd50069;
 }
-
-.nav-item {
-  font-family: "poppins";
-  font-weight: 700;
-  font-size: 0.8em;
+@media (min-width: 768px) {
+  .btn.yellow-btn {
+    padding: 16px 30px;
+  }
 }
-
-.nav-link {
-  color: black;
+.btn.yellow-btn:hover {
+  -webkit-box-shadow: 0px 2px 10px 0px #ffd50069;
+          box-shadow: 0px 2px 10px 0px #ffd50069;
 }
 
 .hero-section {
@@ -11566,9 +11570,8 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .hero-section h1 {
-  font-family: "Jost", sans-serif;
+  font-family: "jost", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -11579,7 +11582,6 @@ h3 {
     font-size: 2.5rem;
   }
 }
-
 .hero-section p {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -11587,56 +11589,85 @@ h3 {
   color: white;
 }
 
-.section1 button {
-  border: none;
-  padding: 4px 20px;
-  border-radius: 45px;
-  background-color: #ffd500;
-  font-weight: bold;
+.about-section {
+  padding: 130px 0;
 }
-
-.btn.yellow-btn {
-  border-radius: 10em;
-  background-color: #ffd500;
+.about-section .title {
+  color: #1a1a1a;
+  font-family: "jost", sans-serif;
   font-weight: bold;
-  color: #000;
-  padding: 10px 20px;
-  -webkit-box-shadow: 0px 7px 20px 0px #ffd50069;
-          box-shadow: 0px 7px 20px 0px #ffd50069;
+  font-size: 1.3rem;
+  padding-top: 20px;
+  margin-top: 1rem;
+  margin-bottom: 25px;
 }
 @media (min-width: 768px) {
-  .btn.yellow-btn {
-    padding: 16px 30px;
+  .about-section .title {
+    font-size: 1.5rem;
+    padding-top: 35px;
+    margin-top: 0.5rem;
   }
 }
-
-.btn.yellow-btn:hover {
-  -webkit-box-shadow: 0px 2px 10px 0px #ffd50069;
-          box-shadow: 0px 2px 10px 0px #ffd50069;
+@media (min-width: 992px) {
+  .about-section .title {
+    font-size: 1.9rem;
+  }
+}
+.about-section .text {
+  margin-bottom: 30px;
+}
+.about-section .text p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #555c6a;
+}
+.about-section .image-container {
+  position: relative;
+  width: 100%;
+}
+.about-section .image-container .text {
+  background: #ffd700;
+  position: absolute;
+  bottom: -10%;
+  right: 15%;
+  padding: 25px;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 0.6em;
+  border-top-right-radius: 0.6em;
+  border-bottom-right-radius: 2em;
+  -webkit-box-shadow: 3px 8px 15px rgba(255, 215, 0, 0.5);
+          box-shadow: 3px 8px 15px rgba(255, 215, 0, 0.5);
+}
+.about-section .image-container .text p {
+  margin-bottom: 0px;
+  color: #030303;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-align: left;
 }
 
 .business-vertical-section {
-  padding: 0px 0px;
+  padding: 50px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#f2f5f8), to(#ffffff));
   background: linear-gradient(to bottom, #f2f5f8 0%, #ffffff 100%);
 }
 @media (min-width: 768px) {
   .business-vertical-section {
-    padding: 27px 0px;
+    padding: 100px;
   }
 }
 .business-vertical-section h2 {
   text-align: center;
-  font-family: "Jost";
+  font-family: "jost", sans-serif;
   font-weight: 700;
-  font-size: 1.2rem;
-  margin-bottom: 0rem;
-  padding-top: 14px;
+  font-size: 2rem;
+  margin-bottom: 28px;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .business-vertical-section h2 {
-    font-size: 2rem;
-    padding: 0px;
+    font-size: 3rem;
   }
 }
 .business-vertical-section .items {
@@ -11663,12 +11694,12 @@ h3 {
   padding-right: 10px;
 }
 .business-vertical-section .items .card-body .para1 {
-  font-family: "jost";
+  font-family: "jost", sans-serif;
   font-weight: 600;
   margin-bottom: 0;
 }
 .business-vertical-section .items .card-body .para2 {
-  font-family: "poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 0.9em;
   color: #6e666c;
@@ -11685,52 +11716,6 @@ h3 {
 }
 .business-vertical-section .items:hover .card-body .para2 {
   color: #000;
-}
-
-.about-section p {
-  font-family: "poppins";
-  font-weight: 400;
-  font: size 0.6rem;
-  color: #555c6a;
-}
-@media (min-width: 768px) {
-  .about-section p {
-    font-size: 0.8rem;
-  }
-}
-@media (min-width: 992px) {
-  .about-section p {
-    font-size: 0.7rem;
-  }
-}
-
-.about-section h2 {
-  color: #1a1a1a;
-  font-family: "jost", sans-serif;
-  font-weight: bold;
-  font-size: 1.3rem;
-  padding-top: 20px;
-  margin-top: 1rem;
-}
-@media (min-width: 768px) {
-  .about-section h2 {
-    font-size: 1.5rem;
-    padding-top: 35px;
-    margin-top: 0.5rem;
-  }
-}
-@media (min-width: 992px) {
-  .about-section h2 {
-    font-size: 1.9rem;
-  }
-}
-
-.about-section .container {
-  padding: 5px 15px;
-}
-
-.about-section img {
-  padding-top: 20px;
 }
 
 .our-brand-section {
@@ -11755,7 +11740,7 @@ h3 {
   }
 }
 .our-brand-section h2 {
-  font-family: "jost";
+  font-family: "jost", sans-serif;
   font-weight: bold;
   padding-top: 60px;
   padding-left: 10px;
@@ -11771,7 +11756,7 @@ h3 {
   }
 }
 .our-brand-section p {
-  font-family: "poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #949494;
   font-size: 0.9em;
@@ -11795,29 +11780,38 @@ h3 {
 }
 @media (min-width: 768px) {
   .company-section img {
-    padding: 40px 10px;
+    padding: 40px 0;
   }
 }
 
-.news-section h2 {
-  text-align: center;
-  font-family: "jost";
-  font-weight: bold;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.news-section {
+  padding: 50px 0;
 }
 @media (min-width: 768px) {
-  .news-section h2 {
-    padding-top: 70px;
-    padding-bottom: 15px;
+  .news-section {
+    padding: 100px 0;
   }
 }
-@media (min-width: 992px) {
-  .news-section h2 {
-    margin-top: 70px;
+.news-section .title {
+  font-family: "jost", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+}
+@media (min-width: 576px) {
+  .news-section .title {
+    font-size: 3rem;
   }
 }
-.news-section .thumbnail-container {
+.news-section .news {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .news-section .news {
+    margin-bottom: 0;
+  }
+}
+.news-section .news .thumbnail-container {
   width: 100%;
   overflow: hidden;
   display: -webkit-box;
@@ -11830,58 +11824,72 @@ h3 {
           justify-content: center;
   border-top-left-radius: 5em;
   border-bottom-right-radius: 5em;
+  position: relative;
 }
-.news-section .thumbnail-container img {
+.news-section .news .thumbnail-container img {
   width: auto;
   height: 100%;
+  -webkit-transition: -webkit-transform ease-in-out 0.3s;
+  transition: -webkit-transform ease-in-out 0.3s;
+  transition: transform ease-in-out 0.3s;
+  transition: transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
 }
-.news-section .card-body {
+.news-section .news .thumbnail-container::after {
+  content: "";
+  position: absolute;
+  left: -75%;
+  z-index: 2;
+  width: 50%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+  -webkit-transition: left 0.75s;
+  transition: left 0.75s;
+}
+.news-section .news .thumbnail-container:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.news-section .news .thumbnail-container:hover::after {
+  left: 125%;
+}
+.news-section .news .text-container {
   padding: 0;
   padding-top: 18px;
 }
-.news-section .card-body h4 {
-  font-family: "jost";
+.news-section .news .text-container .news-title {
+  font-family: "jost", sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   color: #181818;
 }
 @media (min-width: 768px) {
-  .news-section .card-body h4 {
+  .news-section .news .text-container .news-title {
     font-size: 1.5rem;
   }
 }
-.news-section .card-body .p4 {
-  font-family: "poppins";
-  font-weight: 300;
-  font-size: 0.9rem;
-  color: black;
+.news-section .news .text-container .excerpt {
   border-bottom: 1px solid #dbdbdb;
   padding-bottom: 10px;
-  margin-bottom: 10px;
 }
-@media (min-width: 768px) {
-  .news-section .card-body .p4 {
-    font-size: 0.7em;
-    padding-bottom: 20px;
-    margin-bottom: 6px;
-  }
-}
-@media (min-width: 992px) {
-  .news-section .card-body .p4 {
-    padding-bottom: 10px;
-  }
-}
-.news-section .card-body .p6 {
-  font-family: "poppins";
+.news-section .news .text-container .excerpt p {
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 0.8em;
-  margin: 1rem;
+  font-size: 0.9em;
+  color: #404040;
+  margin-bottom: 0;
 }
-@media (min-width: 768px) {
-  .news-section .card-body .p6 {
-    font-size: 0.7rem;
-    margin: 0.2rem;
-  }
+.news-section .news .text-container .meta_data {
+  font-family: "jost", sans-serif;
+  font-weight: 500;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 0.8em;
+  color: #7a7a7a;
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 0;
 }
 
 .client-section {
@@ -11933,7 +11941,7 @@ h3 {
           box-shadow: 2px 1px 5px 5px #f9f9f9;
 }
 .right-section .client-box .text {
-  font-family: "poppins";
+  font-family: "Poppins", sans-serif;
   font-style: italic;
   color: #c4c4c4;
   font-size: 0.7rem;
@@ -11942,7 +11950,7 @@ h3 {
   font-size: 0.9rem;
 }
 .right-section .client-box .name {
-  font-family: "jost";
+  font-family: "jost", sans-serif;
   font-weight: bold;
   padding-left: 15px;
   padding-bottom: 20px;
@@ -11959,7 +11967,7 @@ h3 {
 }
 
 .nav-section-bottom .nav-item-1 {
-  font-family: "jost";
+  font-family: "jost", sans-serif;
   font-weight: 600;
   font-size: 0.7em;
 }
@@ -11985,6 +11993,72 @@ footer img {
 
 footer {
   background: #070707;
+}
+
+.page-header {
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.288);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.288);
+  padding: 25px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+}
+.page-header .menu-side ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+  padding: 0;
+}
+.page-header .menu-side ul li {
+  padding: 0 1.5em;
+  list-style-type: none;
+  position: relative;
+}
+.page-header .menu-side ul li a {
+  color: #262525;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  -webkit-transition: color ease-in-out 0.3s;
+  transition: color ease-in-out 0.3s;
+}
+.page-header .menu-side ul li a::after {
+  content: "";
+  position: absolute;
+  left: 1.3rem;
+  top: calc(100% + 5px);
+  width: 0%;
+  height: 5px;
+  background-color: #ffd700;
+  -webkit-transition: width ease-in-out 0.3s;
+  transition: width ease-in-out 0.3s;
+}
+.page-header .menu-side ul li:first-child {
+  padding-left: 0;
+}
+.page-header .menu-side ul li:first-child a::after {
+  left: 0;
+}
+.page-header .menu-side ul li:last-child {
+  padding-right: 0;
+}
+.page-header .menu-side ul li:hover a {
+  text-decoration: none;
+  color: #000;
+}
+.page-header .menu-side ul li:hover a::after {
+  width: calc(100% - 2.6rem);
+}
+.page-header .menu-side ul li:hover:first-child a::after, .page-header .menu-side ul li:hover:last-child a::after {
+  width: calc(100% - 1.3rem);
+}
+
+.header-spacer {
+  height: 10px;
 }
 
 /*# sourceMappingURL=app.css.map*/
