@@ -10,6 +10,8 @@
 
     .menu-side {
         $menu-item-gap: 1.3rem;
+        display: flex;
+        align-items: center;
 
         ul {
             display: flex;
