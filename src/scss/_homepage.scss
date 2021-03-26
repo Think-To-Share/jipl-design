@@ -181,15 +181,12 @@
         margin-top: 40px;
     }
 
-    @media (min-width: 992px) {
-        background-image: url('../images/brand-section-image.jpg');
-        background-repeat: no-repeat;
-        background-position: top right;
-        background-size: 50%;
-    }
+    .logo-item {
+        display: none;
 
-    @media (min-width: 1200px) {
-        background-position: bottom right;
+        &.active {
+            display: flex;
+        }
     }
 
     h2 {
@@ -230,6 +227,7 @@
 
     img {
         padding: 15px 5px;
+        cursor: pointer;
 
         @media (min-width: 768px){
             padding:40px 0;
