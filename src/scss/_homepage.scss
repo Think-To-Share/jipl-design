@@ -384,8 +384,12 @@
 .right-section {
     margin-top:50px;
     .client-box {
-        width:70%;
+        width:100%;
         box-shadow: 2px 1px 5px 5px #f9f9f9;
+        @media(min-width:768px)
+        {
+            width: 70%;
+        }
         .text {
             font-family: $primary-font;
             font-style: italic;
@@ -428,14 +432,16 @@
 .nav-section-bottom {
     background-color: #070707;
 }
-.nav-section-bottom .nav-item-1 {
+.nav-section-bottom  li {
     font-family: $secondary-font;
     font-weight: 600;
     font-size: 0.7em;
+    padding-bottom: 1%;
 }
-.nav-section-bottom .nav-link {
+.nav-section-bottom a{
     color: white;
     padding: 0.5rem 0.5rem;
+    text-decoration: none;
     @media (min-width: 768px) {
         padding: 0.5rem 1rem;
     }
@@ -449,4 +455,9 @@ footer img {
 }
 footer {
     background: #070707;
+    .copyright
+    {
+        color:#fff;
+        font-family: $secondary-font;
+    }
 }

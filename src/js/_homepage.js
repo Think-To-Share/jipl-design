@@ -3,8 +3,11 @@ import { every, scan, throttleTime, filter } from 'rxjs/operators'
 
 window.addEventListener('load', () => {
     const ourBrandSection = document.querySelector('.our-brand-section')
+    document.querySelector('.company-section .company-logo:first-child').classList.add('active')
 
     if(ourBrandSection) {
+        document.querySelector('.company-section .company-logo:first-child').classList.add('active')
+        ourBrandSection.querySelector('.logo-item:first-child').classList.add('active')
         const companyLogos = document.querySelectorAll('.company-section .company-logo')
         const logoItems = ourBrandSection.querySelectorAll('.logo-item')
 
