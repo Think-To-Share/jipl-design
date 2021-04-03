@@ -1,6 +1,6 @@
 import { from, fromEvent } from 'rxjs'
 import { throttleTime, filter } from 'rxjs/operators'
-import {tns} from 'tiny-slider'
+import {Swiper} from 'swiper'
 
 window.addEventListener('load', () => {
     const ourBrandSection = document.querySelector('.our-brand-section')
@@ -28,3 +28,12 @@ window.addEventListener('load', () => {
         })
     }
 })
+
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });

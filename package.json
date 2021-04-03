@@ -27,6 +27,7 @@
     "bootstrap": "^4.5.3",
     "http-server": "^0.12.3",
     "rxjs": "^6.6.6",
+    "swiper": "^6.5.3",
     "tiny-slider": "^2.9.3"
   },
   "browserslist": [
