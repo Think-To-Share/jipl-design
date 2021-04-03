@@ -1,5 +1,6 @@
 import { from, fromEvent } from 'rxjs'
-import { every, scan, throttleTime, filter } from 'rxjs/operators'
+import { throttleTime, filter } from 'rxjs/operators'
+import {tns} from 'tiny-slider'
 
 window.addEventListener('load', () => {
     const ourBrandSection = document.querySelector('.our-brand-section')

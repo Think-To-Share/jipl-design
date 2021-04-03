@@ -371,18 +371,6 @@
             line-height: 1.2;
         }
     }
-
-    .testimonials {
-        font-family: $primary-font;
-        font-weight: 400;
-        padding-right: 70px;
-        font-size: 0.8rem;
-        color: $secondary-color;
-    }
-}
-
-.right-section {
-    margin-top:50px;
     .client-box {
         width:100%;
         box-shadow: 2px 1px 5px 5px #f9f9f9;
@@ -393,7 +381,7 @@
         .text {
             font-family: $primary-font;
             font-style: italic;
-            color: #c4c4c4;
+            color: #989393;
             font-size: 0.7rem;
             padding:20px 10px;
             margin-bottom:0px;
@@ -405,17 +393,36 @@
             padding-left: 15px;
             padding-bottom:20px;
             margin-bottom: 30px;
+            color:#090241;
             span{
                 font-family: $primary-font;
                 font-weight:400;
                 font-size:0.7em;
             }
         }
-       
+        
     }
 }
 
 
+
+
+.circle-container
+{
+    border-radius: 10em;
+    overflow: hidden;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    
+    img {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 
     
 
