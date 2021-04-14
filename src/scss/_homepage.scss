@@ -182,11 +182,8 @@
     }
 
     .logo-item {
-        display: none;
-
-        &.active {
-            display: flex;
-        }
+        
+        display: flex;
     }
 
     h2 {
@@ -506,6 +503,10 @@ footer {
         color:#fff;
         font-family: $secondary-font;
     }
+}
+.publish-testimonial
+{
+    padding: 32px;
 }
 
 // .swiper-container {

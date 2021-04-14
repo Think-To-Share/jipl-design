@@ -1,39 +1,45 @@
 import { from, fromEvent } from 'rxjs'
 import { throttleTime, filter } from 'rxjs/operators'
-import {Swiper} from 'swiper'
+import Swiper from 'swiper';
+import SwiperCore, { Navigation, Pagination } from 'swiper/core';
 
 window.addEventListener('load', () => {
     const ourBrandSection = document.querySelector('.our-brand-section')
     document.querySelector('.company-section .company-logo:first-child').classList.add('active')
 
-    if(ourBrandSection) {
-        document.querySelector('.company-section .company-logo:first-child').classList.add('active')
-        ourBrandSection.querySelector('.logo-item:first-child').classList.add('active')
-        const companyLogos = document.querySelectorAll('.company-section .company-logo')
-        const logoItems = ourBrandSection.querySelectorAll('.logo-item')
+    // if(ourBrandSection) {
+    //     document.querySelector('.company-section .company-logo:first-child').classList.add('active')
+    //     ourBrandSection.querySelector('.logo-item:first-child').classList.add('active')
+    //     const companyLogos = document.querySelectorAll('.company-section .company-logo')
+    //     const logoItems = ourBrandSection.querySelectorAll('.logo-item')
 
-        from(companyLogos).subscribe(companyLogo => {
-            fromEvent(companyLogo, 'click')
-            .pipe(throttleTime('1000'))
-            .pipe(filter((ev) => !companyLogo.classList.contains('active')))
-            .subscribe((ev) => {
-                const open_data = companyLogo.dataset.open
+    //     from(companyLogos).subscribe(companyLogo => {
+    //         fromEvent(companyLogo, 'click')
+    //         .pipe(throttleTime('1000'))
+    //         .pipe(filter((ev) => !companyLogo.classList.contains('active')))
+    //         .subscribe((ev) => {
+    //             const open_data = companyLogo.dataset.open
 
-                from(logoItems).subscribe(logoItem => logoItem.classList.remove('active'))
-                from(companyLogos).subscribe(logo => logo.classList.remove('active'))
+    //             from(logoItems).subscribe(logoItem => logoItem.classList.remove('active'))
+    //             from(companyLogos).subscribe(logo => logo.classList.remove('active'))
 
-                companyLogo.classList.add('active')
-                ourBrandSection.querySelector(`.logo-item[data-logo="${open_data}"]`).classList.add('active')
-            })
-        })
-    }
+    //             companyLogo.classList.add('active')
+    //             ourBrandSection.querySelector(`.logo-item[data-logo="${open_data}"]`).classList.add('active')
+    //         })
+    //     })
+    // }
+
+    SwiperCore.use([Navigation, Pagination]);
+
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
 })
 
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 2,
-    spaceBetween: 30,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+
