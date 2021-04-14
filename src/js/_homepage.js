@@ -2,6 +2,11 @@ import { from, fromEvent } from 'rxjs'
 import { throttleTime, filter } from 'rxjs/operators'
 import Swiper from 'swiper';
 import SwiperCore, { Navigation, Pagination } from 'swiper/core';
+import Typed from 'typed.js';
+import gsap from 'gsap';
+import ScrollTrigger  from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger)
 
 window.addEventListener('load', () => {
     const ourBrandSection = document.querySelector('.our-brand-section')
@@ -39,6 +44,36 @@ window.addEventListener('load', () => {
           prevEl: '.swiper-button-prev',
         },
       });
+
+      const bannerHeader = document.querySelector('.header-text')
+
+      if (bannerHeader) {
+
+          const bannerHeaderText = bannerHeader.textContent
+          bannerHeader.textContent = ""
+          new Typed('.header-text', {
+              strings: [bannerHeaderText],
+              cursorChar: '',
+              typeSpeed: 50
+          });
+      }
+
+      const cardHeaders = document.querySelectorAll('.news-title')
+
+      ScrollTrigger.create({
+          trigger:".news-section",
+          onEnter:(self)=>{
+              cardHeaders.forEach((cardHeader)=>{
+                  const cardHeaderText = cardHeader.textContent
+                  cardHeader.textContent = ""
+                  new Typed(cardHeader, {
+                      strings: [cardHeaderText],
+                      cursorChar: '',
+                      typeSpeed: 80
+                  });
+              })
+          }
+    })
 
 })
 
