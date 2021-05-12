@@ -127,6 +127,7 @@
         border-radius: 15px;
         transition: background-color 0.5s ease-in;
         cursor: pointer;
+        box-shadow: -2px 10px 31px #e8e8e8;
 
         @media (min-width: 768px) {
             padding: 30px;
@@ -374,7 +375,8 @@
     }
     .client-box {
         width:100%;
-        box-shadow: 12px 6px 20px 1px #d2dbf9;
+        // box-shadow: 12px 6px 20px 1px #d2dbf9;
+        box-shadow: -2px 10px 31px #d2dbf9;
         padding-top: 10px;
         background: #fff;
         -moz-user-select: none;
@@ -414,7 +416,7 @@
             // box-shadow: 0 0 16px rgba(0, 0, 0, 0.2784313725490196);
             // background-color: #193676;
             transition: 0.5s;
-            box-shadow: 0px 12px 10px 2px #c6d1f7;
+            // box-shadow: 0px 12px 10px 2px #c6d1f7;
             transform: translateY(-10px);
             color: #fff;
             // .name{
