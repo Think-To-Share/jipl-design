@@ -5,34 +5,48 @@ import SwiperCore, { Navigation, Pagination } from 'swiper/core';
 import Typed from 'typed.js';
 import gsap from 'gsap';
 import ScrollTrigger  from 'gsap/ScrollTrigger';
+import {tns} from 'tiny-slider/src/tiny-slider'
 
 gsap.registerPlugin(ScrollTrigger)
 
 window.addEventListener('load', () => {
     const ourBrandSection = document.querySelector('.our-brand-section')
-    document.querySelector('.company-section .company-logo:first-child').classList.add('active')
 
-    // if(ourBrandSection) {
-    //     document.querySelector('.company-section .company-logo:first-child').classList.add('active')
-    //     ourBrandSection.querySelector('.logo-item:first-child').classList.add('active')
-    //     const companyLogos = document.querySelectorAll('.company-section .company-logo')
-    //     const logoItems = ourBrandSection.querySelectorAll('.logo-item')
+    if(ourBrandSection) {
+        const companyLogos = document.querySelectorAll('.company-section .company-logo')
 
-    //     from(companyLogos).subscribe(companyLogo => {
-    //         fromEvent(companyLogo, 'click')
-    //         .pipe(throttleTime('1000'))
-    //         .pipe(filter((ev) => !companyLogo.classList.contains('active')))
-    //         .subscribe((ev) => {
-    //             const open_data = companyLogo.dataset.open
+        const brandSlider = tns({
+            container: '.brand-slider-container',
+            arrowKeys: true,
+            mouseDrag: true,
+            autoHeight: true,
+            autoplay: true,
+            nav: false,
+            autoplayButtonOutput: false,
+            controlsText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+            navPosition: 'bottom',
+        })
 
-    //             from(logoItems).subscribe(logoItem => logoItem.classList.remove('active'))
-    //             from(companyLogos).subscribe(logo => logo.classList.remove('active'))
+        brandSlider.events.on('indexChanged', (info) => {
+            from(companyLogos).subscribe(logo => logo.classList.remove('active'))
 
-    //             companyLogo.classList.add('active')
-    //             ourBrandSection.querySelector(`.logo-item[data-logo="${open_data}"]`).classList.add('active')
-    //         })
-    //     })
-    // }
+            const activeLogo = companyLogos[info.index - 1];
+            if(activeLogo) {
+                activeLogo.classList.add('active');
+            }
+        })
+
+        from(companyLogos).subscribe(companyLogo => {
+            fromEvent(companyLogo, 'click')
+            .pipe(throttleTime('1000'))
+            .pipe(filter((ev) => !companyLogo.classList.contains('active')))
+            .subscribe((ev) => {
+                const open_data = companyLogo.dataset.open
+
+                brandSlider.goTo(open_data - 1)
+            })
+        })
+    }
 
     SwiperCore.use([Navigation, Pagination]);
 
