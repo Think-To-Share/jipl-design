@@ -195,11 +195,16 @@
             z-index: 2;
             display: flex;
             justify-content: space-between;
-
+            @media (min-width: 768px) {
+                width: calc(100% + 80px);
+            }
             button {
                 background: transparent;
                 border: none;
                 box-shadow: none;
+                i {
+                    color: #ffd700;
+                }
             }
         }
     }
@@ -618,6 +623,7 @@ footer {
     font-weight: 900;
     letter-spacing: 0.25em;
     text-transform: uppercase;
+    border:none;
   }
   .cta svg {
     position: relative;
@@ -640,4 +646,10 @@ footer {
   }
   .cta:active {
     transform: scale(0.96);
+  }
+  .page-template-default{
+      margin: 0 !important;
+  }
+  .header-spacer{
+      height: 0px !important;
   }

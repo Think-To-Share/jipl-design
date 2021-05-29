@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
             autoplay: true,
             nav: false,
             autoplayButtonOutput: false,
-            controlsText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+            controlsText: ["<i class='fas fa-chevron-left fa-3x'></i>", "<i class='fas fa-chevron-right fa-3x'></i>"],
             navPosition: 'bottom',
         })
 
