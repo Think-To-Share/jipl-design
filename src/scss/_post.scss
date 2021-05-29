@@ -1,8 +1,17 @@
-.single-post{
-    .entry-content *{
+.single-post {
+    .entry-content * {
         font-family: $primary-font;
+        font-weight: 400;
+
+        p {
+            color: #555c6a;
+        }
     }
-    h1,h2,h3,h4,h5{
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
         font-family: $secondary-font;
     }
 }

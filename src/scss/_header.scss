@@ -30,7 +30,7 @@
                     transition: color ease-in-out 0.3s;
 
                     &::after {
-                        content: "";
+                        content: '';
                         position: absolute;
                         left: $menu-item-gap;
                         top: calc(100% + 5px);
@@ -61,7 +61,7 @@
                         color: #000;
 
                         &::after {
-                            width: calc(100% - #{($menu-item-gap * 2)});    
+                            width: calc(100% - #{($menu-item-gap * 2)});
                         }
                     }
 
@@ -69,7 +69,7 @@
                     &:last-child {
                         a {
                             &::after {
-                                width: calc(100% - #{$menu-item-gap});    
+                                width: calc(100% - #{$menu-item-gap});
                             }
                         }
                     }
