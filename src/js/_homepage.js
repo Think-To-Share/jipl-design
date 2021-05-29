@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
             container: '.brand-slider-container',
             arrowKeys: true,
             mouseDrag: true,
-            autoHeight: true,
+            autoHeight: false,
             autoplay: true,
             nav: false,
             autoplayButtonOutput: false,
