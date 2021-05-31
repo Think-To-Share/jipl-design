@@ -76,10 +76,6 @@ window.addEventListener('load', () => {
         },
       });
 
-      const bannerHeader = document.querySelector('.header-text')
-
-      if (bannerHeader) {
-
     const bannerHeader = document.querySelector('.header-text')
 
     if (bannerHeader) {
