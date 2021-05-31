@@ -4,11 +4,11 @@ import Swiper from 'swiper'
 import SwiperCore, { Navigation, Pagination } from 'swiper/core'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import { TextPlugin } from "gsap/TextPlugin";
+import { TextPlugin } from 'gsap/TextPlugin'
 import { tns } from 'tiny-slider/src/tiny-slider'
 
 gsap.registerPlugin(ScrollTrigger)
-gsap.registerPlugin(TextPlugin);
+gsap.registerPlugin(TextPlugin)
 
 window.addEventListener('load', () => {
     const ourBrandSection = document.querySelector('.our-brand-section')
@@ -75,21 +75,20 @@ window.addEventListener('load', () => {
                 spaceBetween: 70,
             },
         },
-    });
+    })
 
     const typingAnimations = document.querySelectorAll('.typing-animation')
-    typingAnimations.forEach(typingAnimation => {
+    typingAnimations.forEach((typingAnimation) => {
         const text = typingAnimation.textContent
         typingAnimation.textContent = ''
         gsap.to(typingAnimation, {
             scrollTrigger: typingAnimation,
             text: {
-                value: text
-            }, 
-            duration: 5, 
-            delay: 1, 
-            ease: "none"
+                value: text,
+            },
+            duration: 5,
+            delay: 1,
+            ease: 'none',
         })
     })
-    
 })
