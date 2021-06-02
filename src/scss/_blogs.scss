@@ -4,8 +4,12 @@
 
         .blog-main {
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr;
             grid-gap: 30px;
+
+            @media (min-width: 768px) {
+                grid-template-columns: 1fr 2fr;
+            }
 
             .image-container {
                 border-radius: 5px;

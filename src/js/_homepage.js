@@ -1,7 +1,5 @@
 import { from, fromEvent } from 'rxjs'
 import { throttleTime, filter } from 'rxjs/operators'
-import Swiper from 'swiper'
-import SwiperCore, { Navigation, Pagination } from 'swiper/core'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import { TextPlugin } from 'gsap/TextPlugin'
@@ -56,26 +54,36 @@ window.addEventListener('load', () => {
         })
     }
 
-    SwiperCore.use([Navigation, Pagination])
+    if(document.querySelector('.client-section')) {
+        tns({
+            container: '.publish-testimonial',
+            controls: false,
+            autoHeight: false,
+            autoplay: true,
+            nav: false,
+            autoplayButtonOutput: false,
+            items: 1,
+            responsive: {
+                992: {
+                    gutter: 15,
+                    items: 2,
+                    controls: true,
+                    edgePadding: 15,
+                    controlsText: [
+                        "<i class='fas fa-chevron-left fa-2x'></i>",
+                        "<i class='fas fa-chevron-right fa-2x'></i>",
+                    ]
+                },
 
-    var swiper = new Swiper('.swiper-container', {
-        // slidesPerView: 2,
-        // spaceBetween: 30,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 50,
+                1200: {
+                    controlsText: [
+                        "<i class='fas fa-chevron-left fa-3x'></i>",
+                        "<i class='fas fa-chevron-right fa-3x'></i>",
+                    ]
+                }
             },
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 70,
-            },
-        },
-    })
+        })
+    }
 
     const typingAnimations = document.querySelectorAll('.typing-animation')
     typingAnimations.forEach((typingAnimation) => {
