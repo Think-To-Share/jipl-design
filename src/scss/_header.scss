@@ -77,6 +77,12 @@
             }
         }
     }
+    .logo{
+        width: 50%;
+        @media (min-width: 768px) {
+            max-width: 100%;
+        }
+    }
 }
 
 .header-spacer {
