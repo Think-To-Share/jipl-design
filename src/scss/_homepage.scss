@@ -7,6 +7,10 @@
     display: flex;
     align-items: center;
 
+    @media (min-width: 768px) {
+        min-height: 300px;
+    }
+
     h1 {
         font-family: $secondary-font;
         font-weight: 700;
@@ -526,6 +530,12 @@
     @media (min-width: 768px) {
         justify-content: left;
         margin-bottom: none;
+    }
+
+    ul{
+        @media (max-width: 768px) {
+            margin : 0 auto;
+        }
     }
 }
 .nav-section-bottom li {
