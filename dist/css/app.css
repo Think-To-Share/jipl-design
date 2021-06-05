@@ -16335,14 +16335,9 @@ h3 {
 }
 
 .business-vertical-section {
-  padding: 50px 0;
+  padding: 100px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#f2f5f8), to(#ffffff));
   background: linear-gradient(to bottom, #f2f5f8 0%, #ffffff 100%);
-}
-@media (min-width: 768px) {
-  .business-vertical-section {
-    padding: 100px;
-  }
 }
 .business-vertical-section h2 {
   text-align: center;
@@ -16498,12 +16493,7 @@ h3 {
 }
 
 .news-section {
-  padding: 50px 0;
-}
-@media (min-width: 768px) {
-  .news-section {
-    padding: 100px 0;
-  }
+  padding: 100px 0;
 }
 .news-section .title {
   font-family: "jost", sans-serif;
