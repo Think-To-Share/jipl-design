@@ -101,12 +101,8 @@
 
 // Business Vertical
 .business-vertical-section {
-    padding: 50px 0;
+    padding: 100px 0;
     background: linear-gradient(to bottom, #f2f5f8 0%, #ffffff 100%);
-
-    @media (min-width: 768px) {
-        padding: 100px;
-    }
 
     h2 {
         text-align: center;
@@ -269,11 +265,7 @@
 
 // News Section
 .news-section {
-    padding: 50px 0;
-
-    @media (min-width: 768px) {
-        padding: 100px 0;
-    }
+    padding: 100px 0;
 
     .title {
         font-family: $secondary-font;

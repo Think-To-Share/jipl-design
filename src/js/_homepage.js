@@ -87,7 +87,7 @@ window.addEventListener('load', () => {
 
     const typingAnimations = document.querySelectorAll('.typing-animation')
     typingAnimations.forEach((typingAnimation) => {
-        const text = typingAnimation.textContent
+        const text = typingAnimation.innerHTML
         typingAnimation.textContent = ''
         gsap.to(typingAnimation, {
             scrollTrigger: typingAnimation,
