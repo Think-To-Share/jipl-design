@@ -3,12 +3,13 @@
     background-image: url('../images/hero-section-bkg.jpg');
     background-size: cover;
     background-position: top left;
-    min-height: 80vh;
+   
+    min-height: 300px;
     display: flex;
     align-items: center;
 
     @media (min-width: 768px) {
-        min-height: 300px;
+        min-height: 80vh;
     }
 
     h1 {
